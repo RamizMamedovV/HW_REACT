@@ -1,6 +1,6 @@
 import React from "react";
-import Message from "./Message";
-import './Style.css';
+import Message from "./hw_1/Message";
+import './hw_1/Style.css';
 
 function App() {
   const messages = [
