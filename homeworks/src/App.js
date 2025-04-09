@@ -2,6 +2,10 @@ import React from "react";
 import Message from "./hw_1/Message";
 import './hw_1/Style.css';
 import CommentsList from "./hw_2/CommentsList";
+import TemperatureConverter from "./hm_3/TemperatureConverter";
+import Button from "./hm_3/Button";
+import OutlinedCard from "./hm_3/MyCard";
+import MyList from "./hm_3/MyList";
 
 function App() {
 
@@ -32,7 +36,16 @@ function App() {
       ))} */}
 
       {/* homework 2 */}
-      <CommentsList />
+      {/* <CommentsList /> */}
+
+      {/* homework 2 */}
+
+        <TemperatureConverter />
+        {/* <Button /> */}
+        {/* <OutlinedCard /> */}
+
+        <MyList />
+
     </div>
   );
 }
