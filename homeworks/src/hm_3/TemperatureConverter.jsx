@@ -5,21 +5,20 @@ import QueryResponseWindow from './QueryResponseWindow';
 import MyButtons from './MyButton';
 
 function TemperatureConverter() {
+
     // устанавливаем переключатель, где true - celsius, false - Fahrenheit
     const [celsiusFahrToggle, setCelsiusFahrToggle] = React.useState(false);
 
+    // храним запрос для передачи в QueryResponseWindow
     const [request, setRequest] = React.useState('');
-    // console.log(`request: ${request}`);
 
-    // const[push, setPush] = React.useState(false);
-    // const handleClick = (value) => {
-    //     console.log('TemperatureConverter'+value.toString());
-    //     setPush(!push);
-    // };
-
-    const handleCelsiusFahrToggle = () => {
-        setCelsiusFahrToggle(!celsiusFahrToggle);
+    // обрабатываем onClick события кнопки из MyButtons
+    const handleCelsiusFahrToggle = (resp) => {
+        if (resp) {
+            setCelsiusFahrToggle(!celsiusFahrToggle);
+        }
     };
+
     return (
         <div>
 
@@ -29,10 +28,9 @@ function TemperatureConverter() {
                     <RequestAcceptingWindow toggle={celsiusFahrToggle} temperatureIndicators = {(getRequest) => setRequest(getRequest)}/>
                     <QueryResponseWindow toggle={celsiusFahrToggle} temperatureIndicators={request}/>
                 </div>
-                <button onClick={handleCelsiusFahrToggle}>&uarr;&darr;</button>
+                <MyButtons onClick={(resp) => handleCelsiusFahrToggle(resp)} children='&uarr;&darr;' />
             </div>
 
-            {/* <MyButtons children="CONVERT" pushed={(val) => handleClick(val) }/> */}
         </div>
     );
 }

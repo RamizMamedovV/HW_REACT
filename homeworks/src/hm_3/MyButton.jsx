@@ -2,13 +2,10 @@ import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
-export default function MyButtons({children, pushed}) {
+export default function MyButtons({onClick, children}) {
 
-  const[push, setPush] = React.useState(false);
   const handleClick = () => {
-    pushed(push);
-    console.log(push.toString());
-    setPush(!push);
+    onClick(true);
   };
   return (
     <Stack spacing={2} direction="row">
