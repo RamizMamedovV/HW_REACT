@@ -31,3 +31,22 @@
     gap: 50px;
     padding: 5px 15px;
 }
+
+.myBtn {
+    padding: 5px, 15px;
+    color: teal;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid teal;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease !important;
+}
+.myBtn:hover {
+    /* width: 75px; */
+    color: rgb(0, 74, 74);
+    font-size: 18px;
+    border-radius: 5px;
+    transform: scale(1.05) !important;
+}

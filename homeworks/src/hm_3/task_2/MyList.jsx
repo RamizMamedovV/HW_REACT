@@ -5,18 +5,26 @@ import DelButton from './DelButton';
 import classes from './StyleToDoList.module.css';
 
 
-function MyList(props) {
+function MyList({list, title, checkBtn}) {
+
+    // const[item, setItem] = React.useState();
+
+    function handleClick(item) {
+        // console.log(item.id);
+        checkBtn(item?.id);
+        
+    }
     return (
         <div>
-            <h2 className={classes.list_title}>{props.title}</h2>
+            <h2 className={classes.list_title}>{title}</h2>
             <List>
-                {props.list.map((item, index) =>
-                    <div key={item.id}  className={classes.list_item}> 
+                {list.map((item, index) => 
+                    <div key= {item.id} className={classes.list_item}> 
                     <ListItem>
-                        {item.task}
+                        {item.id} {item.task}
                     </ListItem>
                         {/* <ListItem>{item.toDo}</ListItem> */}
-                        <DelButton>Delete</DelButton>
+                        <button className= {classes.myBtn} onClick={() => handleClick(item)} >Delete</button>
                     </div>
                 )}
             </List>
