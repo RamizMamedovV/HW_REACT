@@ -3,8 +3,6 @@ import Box from '@mui/material/Box';
 import Input from '@mui/material/Input';
 
 function RequestAcceptingWindow({ toggle, temperatureIndicators }) {
-    //  
-    // , PlaceholderTxt, request
     const ariaLabel = { 'aria-label': 'description' };
 
     const [request, setRequest] = React.useState('');
@@ -22,14 +20,10 @@ function RequestAcceptingWindow({ toggle, temperatureIndicators }) {
         if ( temperature === NaN || temperature <= -273 || temperature >= 15000000) {
             alert('Please enter a valid number!')
         } 
-        // else if (isNaN(temperature)) {
-        //     alert('Please enter a valid number!')
-        // }
         
         else {
             temperatureIndicators(temperature);
             setRequest(temperature);
-            // console.log(temperature);
         }
 
     };

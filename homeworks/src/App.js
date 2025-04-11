@@ -4,8 +4,8 @@ import './hw_1/Style.css';
 import CommentsList from "./hw_2/CommentsList";
 import TemperatureConverter from "./hm_3/TemperatureConverter";
 import Button from "./hm_3/MyButton";
-import OutlinedCard from "./hm_3/MyCard";
-import MyList from "./hm_3/MyList";
+import IconLabelButtons from "./hm_3/task_2/DelButton";
+import ToDoList from "./hm_3/task_2/ToDoList";
 
 function App() {
 
@@ -38,13 +38,12 @@ function App() {
       {/* homework 2 */}
       {/* <CommentsList /> */}
 
-      {/* homework 2 */}
+      {/* homework 3 */}
 
-        <TemperatureConverter />
-        {/* <Button /> */}
-        {/* <OutlinedCard /> */}
+        {/* <TemperatureConverter /> */}
 
-        {/* <MyList /> */}
+        {/* <IconLabelButtons /> */}
+        <ToDoList />
 
     </div>
   );
