@@ -8,8 +8,11 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 // import { store } from './hw_5/store';
 // import App from './hw_5/App';
-import { store } from './hw_6/app/store';
-import App from './hw_6/App';
+// import { store } from './hw_6/app/store';
+// import App from './hw_6/App';
+import App from './hw_7_Thunk/App';
+import { store } from './hw_7_Thunk/app/store';
+import './index.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
