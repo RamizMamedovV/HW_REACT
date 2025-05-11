@@ -1,0 +1,26 @@
+.header {
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 18px;
+    padding-bottom: 19px;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.header_logo {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+}
+
+.header_nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}

@@ -1,0 +1,15 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* 
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+} */
