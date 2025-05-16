@@ -13,28 +13,27 @@ import CartPage from '../../pages/CartPage/CartPage';
 function Header() {
     return (
         <BrowserRouter>
-            <div className={`${styles.header} ${styles.center}`}>
-                <header>
-                    <div className={`${styles.header_logo}`}>
-                        <Link to="/" > <Logo /> </Link>
-                        
-                        <SearchIcon />
-                    </div>
-                    <nav className={`${styles.header_nav}`}>
+            <header className={`${styles.header} ${styles.center}`}>
+                <div className={`${styles.header_logo}`}>
+                    <Link to="/" > <Logo /> </Link>
 
-                        <BurgerIcon />
+                    <SearchIcon />
+                </div>
+                <nav className={`${styles.header_nav}`}>
 
-                        <UserIcon />
+                    <BurgerIcon />
 
-                        <Link to="/cart" > <CartIcon /> </Link>
-                        
-                    </nav>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/cart" element={<CartPage />} />
-                    </Routes>
-                </header>
-            </div>
+                    <UserIcon />
+
+                    <Link to="/cart" > <CartIcon /> </Link>
+
+                </nav>
+
+            </header>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/cart" element={<CartPage />} />
+            </Routes>
         </BrowserRouter>
 
     );

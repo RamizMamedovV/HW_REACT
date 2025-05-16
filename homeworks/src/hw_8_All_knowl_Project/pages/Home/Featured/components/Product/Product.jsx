@@ -36,7 +36,7 @@ function Product() {
                     <div className="feature_txt">
                         <h5 className="feature_h5">{product.h5}</h5>
                         <p className="feature_item_p">{product.item_p}</p>
-                        <h5 className="feature_price">${product.price}</h5>
+                        <h5 className="feature_price">${product.price}.00</h5>
                     </div>
 
 
