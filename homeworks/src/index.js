@@ -21,6 +21,8 @@ import { Provider } from 'react-redux';
 // hw8
 import App from './hw_8_All_knowl_Project/App';
 
+// import App from'./example/App';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

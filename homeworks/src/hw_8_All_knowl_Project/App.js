@@ -1,29 +1,32 @@
-import React from 'react';
-import Home from './pages/Home';
+import Header from './layout/Header/Header';
+import Footer from './layout/Footer/Footer';
+import Home from './pages/Home/Home';
+import CartPage from './pages/CartPage/CartPage';
 import './App.css';
+
+import { Provider } from 'react-redux';
+import store from './store/index';
+
 
 
 
 function App() {
+
     return (
-        <div className='center'>
-            <Home />
-            {/* <header class="header center">
-                <div class="header_logo">
-                    <Logo_Png2 />
-                    <Search_svg />
 
-                </div>
-                <nav class="header_nav">
+        <Provider store={store}>
+                <div className='center'>
+                    <Header />
+                    {/* <Home /> */}
+                    <Footer />
+                </div >
+        </Provider>
 
-                    <Burger_svg />
 
-                    <User_svg />
 
-                    <Cart_svg />
-                </nav> */}
-            {/* </header> */}
-        </div>
+
+
+
     );
 }
 
